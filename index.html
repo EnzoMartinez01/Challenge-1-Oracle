@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Desafio Oracle</title>
+    <link rel="stylesheet" href="css/index.css">
+  </head>
+  <body>
+    <h1 class="titulo">Challenge Alura</h1>
+
+    <main class="main">
+        <section class="form box">
+          <h2>Mensaje a Encriptar</h2>
+          <form action="">
+                <label for="input-texto">Ingrese el texto a encriptar</label>
+                <br>
+                <input class="text-input" type="text" name="input-texto" id="input-texto" placeholder="Ingrese el texto aqui">
+                <br><br>
+                <input class="btn btn1" type="button" value="Encriptar" id="btn-encriptar">
+                <input class="btn btn2" type="button" value="Desencriptar" id="btn-desencriptar">
+            </form>
+        </section>
+        <section class="msg box">
+            <h2 id="">Mensaje Encriptado</h2>
+            <input class="text-input-salida" id="text_copy" type="text" id="msg" disabled>
+            <br><br>
+            <input class="btn btn-primary" type="button" value="Copiar" onclick="copiartexto(text_copy)" id="copy">
+        </section>
+    </main>
+    <script src="js/encriptación.js"></script>
+  </body>
+</html>
